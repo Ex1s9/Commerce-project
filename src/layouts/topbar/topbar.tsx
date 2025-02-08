@@ -8,7 +8,7 @@ const Topbar: React.FC = () => {
             <div className={styles.headerContent}>
                 <div className={styles.logo}>
                     <div className={styles.item}>
-                        <img src={photo} alt="Логотип компании" />
+                        <a href="#"><img src={photo}/></a>
                     </div>
                 </div>
                 <div className={styles.addressTextBox}>
@@ -16,7 +16,9 @@ const Topbar: React.FC = () => {
                         <a href="#">Севастополь, улица Токарева, 18В</a>
                     </p>
                 </div>
-                <button type="button" className={styles.onlineButton}>Онлайн запись</button>
+                <a href="#">
+                    <button className={styles.onlineButton}>Онлайн запись</button>
+                </a>
                 <div className={styles.topbarline}></div>
             </div>
         </header>
