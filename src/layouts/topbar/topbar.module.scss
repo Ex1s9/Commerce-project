@@ -11,27 +11,27 @@
   background-color: black;
   padding: 10px 20px;
   position: relative;
-}
 
-.headerContent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
+  .headerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 
-.logo {
-  display: flex;
-  justify-content: center;
-  margin-right: 70px;
-}
+  .logo {
+    display: flex;
+    justify-content: center;
+    margin-right: 70px;
 
-.logo img {
-  width: 80px;
-  height: auto;
+    & img {
+      width: 80px;
+      height: auto;
+    }
+  }
 }
 
 .addressTextBox {
@@ -44,21 +44,10 @@
   color: white;
   text-decoration: none;
   font-weight: bold;
-}
 
-.addressText a:hover {
-  text-decoration: underline;
-}
-
-.line {
-  position: absolute;
-  width: 100%;
-  max-width: 600px;
-  height: 1px;
-  background-color: white;
-  margin-top: 60px;
-  left: 50%;
-  transform: translateX(-50%);
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .onlineButton {
@@ -74,11 +63,11 @@
   border-radius: 0;
   transition: background-color 0.3s, color 0.3s;
   margin-left: 70px;
-}
 
-.onlineButton:hover {
-  background-color: white;
-  color: black;
+  &:hover {
+    background-color: white;
+    color: black;
+  }
 }
 
 .topbarline {
