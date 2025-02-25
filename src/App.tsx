@@ -1,9 +1,10 @@
+import Price from "./features/price-list/price/price"
 
 function App() {
 
   return (
     <div>
-      start work
+      <Price />
     </div>
   )
 }

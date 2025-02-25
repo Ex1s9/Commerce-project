@@ -1,0 +1,18 @@
+.price {
+   display: flex;
+   flex-direction: column;
+}
+
+.priceList {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 16px;
+}
+
+.priceItem {
+   display: flex;
+   justify-content: space-between;
+   padding: 8px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
