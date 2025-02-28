@@ -1,10 +1,10 @@
-import MainPage from "./pages/main_page/main_page.tsx";
+import Header from "./components/header/index.tsx";
 
 function App() {
 
   return (
     <div>
-      <MainPage/>
+      <Header />
     </div>
   )
 }
