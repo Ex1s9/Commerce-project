@@ -4,7 +4,7 @@ import s from './header.module.scss';
 const MainContent: React.FC = () => {
     const icons = [
         {
-            src: "/images/icon1.png",
+            src: "/images/header/icon1.png",
             text: "ГАРАНТИЯ НА СТРИЖКУ",
             info: (
                 <>
@@ -14,7 +14,7 @@ const MainContent: React.FC = () => {
             className: ""
         },
         {
-            src: "/images/icon2.png",
+            src: "/images/header/icon2.png",
             text: "КОМФОРТ",
             info: (
                 <>
@@ -24,7 +24,7 @@ const MainContent: React.FC = () => {
             className: s.wider
         },
         {
-            src: "/images/icon3.png",
+            src: "/images/header/icon3.png",
             text: "БЕЗОПАСНОСТЬ",
             info: (
                 <div className={s.test}>

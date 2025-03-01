@@ -2,7 +2,7 @@ import React from 'react';
 import s from './topbar.module.scss';
 
 const Topbar: React.FC = () => {
-    const photo = "/images/FooterLogo.jpeg";
+    const photo = "/images/header/FooterLogo.jpeg";
     const menuItems = ["О нас", "Услуги", "Цены", "Галерея", "Отзывы", "Контакты"];
 
     return (
