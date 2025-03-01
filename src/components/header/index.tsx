@@ -1,13 +1,15 @@
 import MainContent from './mainContent/header';
 import Topbar from './topbar/topbar';
-import WhyChooseUsBlock from "../body/whyChooseUsBlock/whyChooseUsBlock.tsx";
+// import WhyChooseUsBlock from "../body/whyChooseUsBlock/whyChooseUsBlock.tsx";
+import OurTeam from "../body/ourTeam/ourTeam.tsx";
 
 const Header = () => {
    return (
       <div>
          <Topbar />
          <MainContent />
-          <WhyChooseUsBlock/>
+          <OurTeam/>
+          {/*<WhyChooseUsBlock/>*/}
       </div>
    )
 }

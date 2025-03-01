@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  margin-bottom: 100px;
+
+  .firstLineContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    & h2 {
+      font-size: 2.5rem;
+      line-height: 48px;
+      font-weight: 800;
+    }
+
+    & button {
+      padding: 10px 20px;
+      color: #FFF;
+      text-align: center;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 140%;
+      background-color: #000;
+      text-decoration: none;
+      border: 2px solid black;
+
+      &:hover {
+        background-color: white;
+        color: #000;
+      }
+    }
+  }
+}
