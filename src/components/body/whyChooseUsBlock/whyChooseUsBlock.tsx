@@ -19,7 +19,6 @@ const WhyChooseUsBlock: React.FC = () => {
                   по вашим меркам.
               </span>
             ),
-            className: s.first
         },
         {
             src: "images/body/WhyChooseUsBlock/a-icon2.png",
@@ -30,27 +29,24 @@ const WhyChooseUsBlock: React.FC = () => {
                     коррекцию абсолютно бесплатно в течении 3-х дней.
                 </span>
             ),
-            className: s.second
         },
         {
             src: "images/body/WhyChooseUsBlock/a-icon5.png",
             txt: (
                 <span>
                     Наша команда состоит из людей, совмещающих техники классического
-                    барберинга и точные техники стрижки с высококлассным сервисом
+                    барберинга и точные техники стрижки с высококлассным сервисом.
                 </span>
             ),
-            className: s.third
         },
         {
             src: "images/body/WhyChooseUsBlock/a-icon4.png",
             txt: (
                 <span>
                     Среди наших выпускников более 400 довольных учеников, которые
-                    возвращаются к нам за новыми знаниями и повышением квалификации
+                    возвращаются к нам за новыми знаниями и повышением квалификации.
                 </span>
             ),
-            className: s.fourth
         }
     ];
 
@@ -60,7 +56,7 @@ const WhyChooseUsBlock: React.FC = () => {
             <div className={s.mainTxt}>{text}</div>
             <div className={s.infoContainer}>
                 {info.map((line, index) => (
-                    <div key={index} className={`${s.featureContainer} ${line.className}`}>
+                    <div key={index} className={`${s.featureContainer}`}>
                         <img src={line.src} alt={`icon-${index}`} />
                         <div className={s.featureTxt}>{line.txt}</div>
                     </div>
