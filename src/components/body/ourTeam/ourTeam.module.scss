@@ -13,13 +13,13 @@
     justify-content: space-between;
     margin-bottom: 50px;
 
-    & h2 {
+    h2 {
       font-size: 2.5rem;
       line-height: 48px;
       font-weight: 800;
     }
 
-    & button {
+    button {
       padding: 10px 20px;
       color: #FFF;
       text-align: center;
@@ -33,6 +33,48 @@
       &:hover {
         background-color: white;
         color: #000;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .staffItems {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: -50px;
+
+    .infoContainer {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      .txtName {
+        color: #000;
+        font-size: 1.875rem;
+        font-weight: 800;
+        line-height: 28.8px;
+        margin-bottom: 20px;
+      }
+
+      .info {
+        color: #000;
+        font-size: 1.5625rem;
+        font-weight: 500;
+        line-height: 28.8px;
+        width: 87%;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: center top;
+        margin-bottom: 10px;
       }
     }
   }
