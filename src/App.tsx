@@ -1,10 +1,11 @@
-import Price from "./features/price-list/price/price"
+import PriceBlock from "./features/comp/PriceBlock"
+
 
 function App() {
 
   return (
     <div>
-      <Price />
+      <PriceBlock />
     </div>
   )
 }
