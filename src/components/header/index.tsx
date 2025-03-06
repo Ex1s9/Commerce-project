@@ -1,7 +1,8 @@
 import MainContent from './mainContent/header';
 import Topbar from './topbar/topbar';
-// import WhyChooseUsBlock from "../body/whyChooseUsBlock/whyChooseUsBlock.tsx";
+import WhyChooseUsBlock from "../body/whyChooseUsBlock/whyChooseUsBlock.tsx";
 import OurTeam from "../body/ourTeam/ourTeam.tsx";
+import Footer from "../footer/footer.tsx";
 
 const Header = () => {
    return (
@@ -9,7 +10,8 @@ const Header = () => {
          <Topbar />
          <MainContent />
           <OurTeam/>
-          {/*<WhyChooseUsBlock/>*/}
+          <WhyChooseUsBlock/>
+          <Footer/>
       </div>
    )
 }

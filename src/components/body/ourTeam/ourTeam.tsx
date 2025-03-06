@@ -28,9 +28,6 @@ const OurTeam: React.FC = () => {
         <section className={s.container}>
             <div className={s.firstLineContainer}>
                 <h2>Наша команда</h2>
-                <a href="#">
-                    <button>Вся команда</button>
-                </a>
             </div>
             <div className={s.staffItems}>
                 {info.map((column,index) => (
