@@ -1,0 +1,28 @@
+.links {
+     display: flex;
+     gap: 2rem;
+     & a:hover {
+          color: gray;
+          cursor: pointer;
+     }
+}
+
+
+@media (min-width: 320px) {
+     .links {
+          flex-direction: column;
+     }
+}
+
+@media (min-width: 768px) {
+     .links {
+          display: flex;
+          flex-direction: row;
+     }
+}
+
+@media (min-width: 1024px) {
+     .links {
+          gap: 3rem;
+     }
+}

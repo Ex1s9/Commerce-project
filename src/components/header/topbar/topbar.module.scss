@@ -1,108 +1,151 @@
-*, *::before, *::after {
-  box-sizing: border-box;
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
 }
 
 .header {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  width: 100%;
-  min-height: 150px;
-  background-color: black;
-  padding: 10px 20px;
-  position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+	min-height: 150px;
+	background-color: black;
+	padding: 10px 20px;
+	position: relative;
 
-  .headerContent {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-  }
+	.headerContent {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 0 20px;
 
-  .logo {
-    user-select: none;
-    display: flex;
-    justify-content: center;
-    margin-right: 70px;
+		.logo {
+			user-select: none;
+			display: flex;
+			justify-content: center;
+			margin-right: 70px;
 
-    & img {
-      width: 80px;
-      height: auto;
-    }
-  }
+			& img {
+				width: 80px;
+				height: auto;
+			}
+		}
+
+		.addressTextBox {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			a {
+				color: white;
+				text-decoration: none;
+				font-weight: bold;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		.onlineButton {
+			background-color: black;
+			color: white;
+			border: 1px solid white;
+			font-weight: bold;
+			width: 150px;
+			height: 45px;
+			cursor: pointer;
+			font-size: 12px;
+			text-transform: uppercase;
+			border-radius: 0;
+			transition: background-color 0.3s, color 0.3s;
+			margin-left: 70px;
+
+			&:hover {
+				background-color: white;
+				color: black;
+			}
+		}
+
+		.topbarline {
+			position: absolute;
+			width: 90%;
+			max-width: 800px;
+			height: 1px;
+			background-color: white;
+			top: 100px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.menu {
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			top: 115px;
+			color: white;
+			text-decoration: none;
+			font-weight: bold;
+			transition: color 0.3s;
+		}
+	}
 }
 
-.addressTextBox {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media (min-width: 0px) {
+	.header {
+		.headerContent {
+			flex-direction: column;
+			align-items: flex-start;
+			padding: 0;
+			.logo {
+				margin-right: 0px;
+			}
+			.menu {
+				display: none;
+			}
+			.topbarline {
+				display: none;
+			}
+
+			.onlineButton {
+				margin-left: 0px;
+			}
+			.test {
+				position: absolute;
+				top: 10px;
+				right: 0;
+			}
+		}
+	}
 }
 
-.addressText a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+@media (min-width: 390px) {
+	.header {
+		.headerContent {
+			align-items: center;
+		}
+	}
+};
 
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-.onlineButton {
-  background-color: black;
-  color: white;
-  border: 1px solid white;
-  font-weight: bold;
-  width: 150px;
-  height: 45px;
-  cursor: pointer;
-  font-size: 12px;
-  text-transform: uppercase;
-  border-radius: 0;
-  transition: background-color 0.3s, color 0.3s;
-  margin-left: 70px;
-
-  &:hover {
-    background-color: white;
-    color: black;
-  }
-}
-
-.topbarline {
-  position: absolute;
-  width: 90%;
-  max-width: 800px;
-  height: 1px;
-  background-color: white;
-  top: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.menu {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  top: 115px;
-  gap: 40px;
-}
-
-.menuContainer {
-  display: flex;
-  gap: 20px;
-}
-
-.menuItem {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-
-  &:hover {
-    color: gray;
-  }
+@media (min-width: 768px) {
+	.header {
+		.headerContent {
+			flex-direction: row;
+			gap: 50px;
+			.test {
+				display: none;
+			}
+			.menu {
+				display:inline-flex;
+			}
+			.topbarline {
+				display: block;
+			}
+		}
+	}
 }
