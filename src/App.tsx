@@ -1,5 +1,5 @@
 import Header from "./components/header/index.tsx";
-import PriceBlock from "./features/comp/PriceBlock";
+import PriceBlock from "./components/price-list/comp/PriceBlock.tsx";
 
 function App() {
   return (

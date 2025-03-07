@@ -1,4 +1,4 @@
-import Price from "../price-list/price/price";
+import Price from "../price/price";
 import s from "./PriceBlock.module.scss";
 
 const PriceBlock = () => {
