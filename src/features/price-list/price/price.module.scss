@@ -1,0 +1,122 @@
+.price {
+   display: flex;
+   flex-direction: column;
+   margin: 0 15px;
+   .container {
+      .buttonBlock {
+         display: flex;
+         gap: 20px;
+         .button {
+            border: 2px solid black;
+            width: 33%;
+            height: 101px;
+            background-color: white;
+            margin-bottom: 50px;
+            font-size: 30px;
+            font-weight: 800;
+            &:hover {
+               color: white;
+               background-color: black;
+            }
+            &.active {
+               background-color: black;
+               color: white;
+            }
+         }
+      }
+      .priceList {
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         gap: 65px;
+         .column {
+            width: 100%;
+            & a {
+               width: 166px;
+               cursor: pointer;
+            }
+            .priceItem {
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+               gap: 20px;
+               color: #000;
+               font-size: 14px;
+               font-weight: 500;
+               line-height: 21px;
+               padding: 10px 20px;
+               border-bottom: 1px solid #EBEBEB;
+               .title {
+                  font-size: 14px;
+                  font-weight: 500;
+               }
+               .cost {
+                  font-size: 18px;
+                  font-weight: 800;
+               }
+            }
+            
+            .serviceButton {
+               display: inline-block;
+               font-size: 14px;
+               font-weight: 800;
+               text-decoration: none;
+               padding-left: 15px;
+               padding-top: 10px;
+               padding-bottom: 10px;
+               position: relative;
+               background-color: #000;
+               color: #fff;
+               border: 2px solid #000;
+               text-align: center;
+               margin-top: 25px;
+               padding-right: 65px;
+               span {
+                  margin-left: 15px;
+                  padding: 10px 15px;
+                  background-color: #fff;
+                  color: #000;
+                  border: 1px solid #fff;
+                  width: 23px;
+                  height: 46%;
+                  right: 0;
+                  top: 0;
+                  position: absolute;
+               }
+            }
+         }
+         
+      }
+   }
+}
+
+@media (min-width: 0px) {
+   .price {
+      .container {
+         .buttonBlock {
+            flex-direction: column;
+            margin-bottom: 50px;
+            .button {
+               width: 100%;
+               margin-bottom: 0px;
+            }
+         }
+         .priceList {
+            grid-template-columns: repeat(1, 1fr);
+         }
+      }
+   }
+}
+
+@media (min-width: 768px) {
+   .price {
+      .container {
+         .buttonBlock {
+            flex-direction: row;
+         }
+         .priceList {
+            grid-template-columns: repeat(3, 1fr);
+         }
+      }
+      
+   }
+}
