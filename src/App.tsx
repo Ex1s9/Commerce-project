@@ -1,3 +1,4 @@
+import Galery from "./components/body/galery/Galery.tsx";
 import OurTeam from "./components/body/ourTeam/ourTeam.tsx";
 import WhyChooseUsBlock from "./components/body/whyChooseUsBlock/whyChooseUsBlock.tsx";
 import Header from "./components/header/index.tsx";
@@ -10,6 +11,7 @@ function App() {
       <PriceBlock />
       <OurTeam />
       <WhyChooseUsBlock />
+      <Galery />
     </div>
   )
 }

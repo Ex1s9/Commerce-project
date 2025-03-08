@@ -7,7 +7,6 @@
 	.centerBlock {
 		max-width: 1200px;
 		margin: 0 auto;
-		padding: 0 15px;
 		.mainText {
 			color: white;
 			margin-bottom: 150px;
@@ -69,6 +68,7 @@
 @media (min-width: 0px) {
 	.container {
 		.centerBlock {
+			padding: 0 20px;
 			.mainText {
 				margin-bottom: 100px;
 				h1 {
@@ -88,6 +88,7 @@
 @media (min-width: 390px) {
 	.container {
 		.centerBlock {
+			padding: 0 25px;
 			.mainText {
 				margin-bottom: 100px;
 				h1 {
@@ -107,6 +108,7 @@
 @media (min-width: 768px) {
 	.container {
 		.centerBlock {
+			padding: 0 30px;
 			.mainText {
 				margin-bottom: 150px;
 				h1 {
@@ -135,6 +137,9 @@
 
 @media (min-width: 1024px) {
 	.container {
+		.centerBlock {
+			padding: 0 40px;
+		}
 		.iconsContainer {
 			flex-direction: row;
 			gap: 50px;

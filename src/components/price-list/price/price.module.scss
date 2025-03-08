@@ -1,7 +1,6 @@
 .price {
    display: flex;
    flex-direction: column;
-   margin: 0 15px;
    .container {
       .buttonBlock {
          display: flex;
@@ -82,6 +81,12 @@
                   top: 0;
                   position: absolute;
                }
+               &:hover {
+                  color: #000;
+                  background-color: #fff;
+                  border: 2px solid #000;
+                  text-decoration: none;
+               }
             }
          }
          
@@ -91,6 +96,7 @@
 
 @media (min-width: 0px) {
    .price {
+      padding: 0 20px;
       .container {
          .buttonBlock {
             flex-direction: column;
@@ -109,6 +115,7 @@
 
 @media (min-width: 768px) {
    .price {
+      padding: 0 30px;
       .container {
          .buttonBlock {
             flex-direction: row;
@@ -119,4 +126,11 @@
       }
       
    }
+}
+
+@media (min-width: 1024px) {
+   .price {
+      padding: 0 40px;
+   }
+   
 }
