@@ -4,7 +4,7 @@ import MobileMenu from "./mobileMenu/MobileMenu";
 import s from "./topbar.module.scss";
 
 const Topbar: React.FC = () => {
-	const photo = "/images/FooterLogo.jpeg";
+	const photo = "/images/header/FooterLogo.jpeg";
 
 	return (
 		<header className={s.header}>

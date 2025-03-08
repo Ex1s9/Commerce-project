@@ -1,5 +1,5 @@
-import MainContent from './mainContent/header';
-import Topbar from './topbar/topbar';
+import MainContent from "./mainContent/header.tsx";
+import Topbar from "./topbar/topbar.tsx";
 
 const Header = () => {
    return (
