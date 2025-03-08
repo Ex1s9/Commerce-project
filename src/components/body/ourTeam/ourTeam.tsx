@@ -1,38 +1,45 @@
-import s from './ourTeam.module.scss';
 import React from "react";
+import s from './ourTeam.module.scss';
 
 const OurTeam: React.FC = () => {
 
     const info = [
-        {   src: "images/header/FooterLogo.jpeg",
+        {
+            src: "images/header/FooterLogo.jpeg",
             name: "Артем Дементьев",
             about: (
-                <span>Топ-мастер, старший преподаватель академии</span>
+                <>
+                    Топ-мастер, старший <span>преподаватель академии</span>
+                </>
             )
         },
-        {   src: "images/header/FooterLogo.jpeg",
+        {
+            src: "images/header/FooterLogo.jpeg",
             name: "Артём Яковенко",
             about: (
-                <span>Опыт более 2-х лет Прошел курс барбер с «0» в академии In Balance</span>
+                <>
+                    Опыт более 2-х лет.<span> Прошел курс барбер с «0» в академии In Balance</span>
+                </>
             )
         },
-        {   src: "images/header/FooterLogo.jpeg",
+        {
+            src: "images/header/FooterLogo.jpeg",
             name: "Дарья",
             about: (
-                <span>Старший Барбер</span>
+                <>Старший Барбер</>
             )
         }
     ];
 
-    return(
+    return (
         <section className={s.container}>
             <div className={s.firstLineContainer}>
                 <h2>Наша команда</h2>
             </div>
             <div className={s.staffItems}>
-                {info.map((column,index) => (
+                {info.map((column, index) => (
                     <div key={index} className={s.infoContainer}>
-                        <img src={column.src}/>
+                        <img src={column.src} />
                         <p className={s.txtName}>{column.name}</p>
                         <div className={s.info}>{column.about}</div>
                     </div>

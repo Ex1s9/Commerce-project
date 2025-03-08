@@ -1,5 +1,5 @@
-import s from './whyChooseUsBlock.module.scss';
 import React, { useState } from 'react';
+import s from './whyChooseUsBlock.module.scss';
 
 const WhyChooseUsBlock: React.FC = () => {
     const [text] = useState<string[]>([
@@ -13,11 +13,11 @@ const WhyChooseUsBlock: React.FC = () => {
             src: "images/body/WhyChooseUsBlock/a-icon1.png",
             txt: (
                 <span>
-                  Семь раз отмерь - один отрежь. Мы вкладываем в него осознанный
-                  подход к нашему ремеслу и внимание к клиентам. Стрижка в In Balance
-                  это как костюм, сделанный на заказ, только для вас, только
-                  по вашим меркам.
-              </span>
+                    Семь раз отмерь - один отрежь. Мы вкладываем в него осознанный
+                    подход к нашему ремеслу и внимание к клиентам. Стрижка в In Balance
+                    это как костюм, сделанный на заказ, только для вас, только
+                    по вашим меркам.
+                </span>
             ),
         },
         {
