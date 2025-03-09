@@ -5,6 +5,40 @@
      margin-bottom: 80px;
      overflow: hidden;
 
+     .title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 50px;
+
+          h2 {
+               font-size: 40px;
+               font-weight: 800;
+          }
+
+          a {
+               cursor: pointer;
+               font-size: 14px;
+               padding: 10px 20px;
+               font-weight: 800;
+               color: #fff;
+               background-color: #000;
+               text-decoration: none;
+               line-height: 140%;
+
+               &:hover {
+                    color: #000;
+                    background-color: #fff;
+                    border: 2px solid #000;
+                    text-decoration: none;
+               }
+          }
+     }
+
+     .swiperWrapper {
+          position: relative;
+     }
+
      .swiper {
           height: 560px;
           width: 100%;
@@ -29,30 +63,52 @@
           }
      }
 
-     .title {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          margin-bottom: 50px;
-          h2 {
-               font-size: 40px;
-               font-weight: 800;
+     // Стили для кастомных кнопок навигации с использованием фоновых изображений
+     .customPrev,
+     .customNext {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 50px;
+          height: 50px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          border: none;
+          cursor: pointer;
+          z-index: 10;
+          transition: 0.3s;
+     }
+
+     .customPrev {
+          left: 10px;
+          background: url("/images/ar-left.png") no-repeat;
+          opacity: 0.5;
+          color: transparent;
+          height: 80px;
+     }
+
+     .customNext {
+          right: 20px;
+          background: url("/images/ar-left.png");
+          opacity: 0.5;
+          color: transparent;
+          height: 80px;
+          transform: translateY(-50%) scaleX(-1);
+          transform-origin: center center;
+     }
+}
+
+@media (min-width: 0px) {
+     .galery {
+          .title {
+               flex-direction: column;
+               align-items: flex-start;
           }
-          a {
-               cursor: pointer;
-               font-size: 14px;
-               padding: 10px 20px;
-               font-weight: 800;
-               color: #FFF;
-               background-color: #000;
-               text-decoration: none;
-               line-height: 140%;
-               &:hover {
-                    color: #000;
-                    background-color: #fff;
-                    border: 2px solid #000;
-                    text-decoration: none;
-               }
+
+          .customPrev,
+          .customNext {
+               display: none;
           }
      }
 }
@@ -61,11 +117,14 @@
      .galery {
           padding: 0 20px;
           margin-bottom: 100px;
+
           .swiper {
                height: auto;
                max-height: 728px;
+
                .slide {
                     width: 100%;
+
                     img {
                          height: auto;
                     }
@@ -74,8 +133,7 @@
 
           .title {
                margin-bottom: 40px;
-               flex-direction: column;
-               align-items: flex-start;
+
                h2 {
                     font-size: 40px;
                }
@@ -87,26 +145,30 @@
      .galery {
           padding: 0 30px;
           margin-bottom: 100px;
+
           .swiper {
                height: auto;
                max-height: 1032px;
+
                .slide {
                     width: 100%;
+
                     img {
                          height: auto;
                     }
                }
           }
+
           .title {
                flex-direction: row;
                align-items: center;
                margin-bottom: 60px;
+
                h2 {
                     font-size: 40px;
                }
           }
      }
-     
 }
 
 @media (min-width: 1024px) {
@@ -117,19 +179,27 @@
           .swiper {
                height: auto;
                max-height: 1032px;
+
                .slide {
                     width: 447px;
+
                     img {
                          height: 560px;
                     }
                }
           }
+
           .title {
                margin-bottom: 60px;
+
                h2 {
                     font-size: 40px;
                }
           }
+
+          .customPrev,
+          .customNext {
+               display: inline;
+          }
      }
-     
 }
