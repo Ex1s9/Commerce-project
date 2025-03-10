@@ -1,0 +1,50 @@
+.map {
+
+     iframe {
+          width: 680px;
+          height: 340px;
+          border: none;
+          max-width: 100% !important;
+     }
+}
+
+@media (min-width: 0px) {
+     .map {
+          height: 340px;
+
+          iframe {
+               width: 440px;
+          }
+     }
+}
+
+@media (min-width: 480px) {
+     .map {
+          height: 340px;
+
+          iframe {
+               width: 730px;
+          }
+     }
+}
+
+@media (min-width: 768px) {
+     .map {
+          height: 350px;
+
+          iframe {
+               width: 960px;
+          }
+     }
+}
+
+
+@media (min-width: 1024px) {
+     .map {
+          height: 340px;
+
+          iframe {
+               width: 680px;
+          }
+     }
+}

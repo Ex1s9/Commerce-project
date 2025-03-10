@@ -1,3 +1,4 @@
+import Contact from "./components/body/contacts/contact.tsx";
 import Galery from "./components/body/galery/galery.tsx";
 import OurTeam from "./components/body/ourTeam/ourTeam.tsx";
 import MainReviews from "./components/body/reviews/index.tsx";
@@ -14,6 +15,7 @@ function App() {
       <WhyChooseUsBlock />
       <Galery />
       <MainReviews />
+      <Contact />
     </div>
   )
 }
