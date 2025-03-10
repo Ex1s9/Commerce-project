@@ -3,7 +3,7 @@ import Reviews from "./reviews"
 
 const MainReviews = () => {
      return (
-          <div className={s.container}>
+          <div className={s.container} id="reviews">
                <h2>Отзывы</h2>
                <div className={s.review}>
                     <div className={s.reviewLeft}>

@@ -3,7 +3,7 @@ import Topbar from "./topbar/topbar.tsx";
 
 const Header = () => {
    return (
-      <div>
+      <div id="about">
          <Topbar />
          <MainContent />
       </div>

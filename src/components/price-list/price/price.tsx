@@ -40,15 +40,15 @@ const Price = () => {
    });
 
    const columns = Array.from({ length: totalColumns }, () => [] as { service: { title: string } | undefined; price: string }[]);
-      reorderedServices.forEach((service, index) => {
-         const priceValue = reorderedPrices[index];
-         if (priceValue === "-") return;
-         const col = index % totalColumns;
-         columns[col].push({ service, price: priceValue });
-      });
+   reorderedServices.forEach((service, index) => {
+      const priceValue = reorderedPrices[index];
+      if (priceValue === "-") return;
+      const col = index % totalColumns;
+      columns[col].push({ service, price: priceValue });
+   });
 
    return (
-      <div className={s.price}>
+      <div className={s.price} id="services">
          <h1>In balance</h1>
          <div className={s.container}>
             <div className={s.buttonBlock}>
