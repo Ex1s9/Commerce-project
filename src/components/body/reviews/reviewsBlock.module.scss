@@ -1,0 +1,45 @@
+.block {
+     display: flex;
+     margin: 5px 5px;
+}
+
+.textContainer {
+     border: 1px solid #F1F1F1;
+     background: #FFF;
+     box-shadow: 0px 40px 4px 0px rgba(0, 0, 0, 0.10);
+     border-radius: 5px;
+     color: #555;
+     text-align: left;
+     width: 650px;
+     height: 236.6px;
+     align-items: flex-start;
+     padding: 25px 25px 65px 25px;
+}
+
+.stars {
+     display: flex;
+     align-items: center;
+     gap: 30px;
+     margin-bottom: 10px;
+     height: 24px;
+
+     li {
+          line-height: 1;
+          list-style: none;
+          color: #FFC108;
+          display: flex;
+     }
+
+     p {
+          color: #555;
+          font-size: 14px;
+          font-weight: 400;
+     }
+}
+
+.author {
+     font-size: 16px;
+     font-weight: bold;
+     margin: 0;
+     margin-bottom: 10px;
+}

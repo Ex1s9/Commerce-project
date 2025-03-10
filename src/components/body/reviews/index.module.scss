@@ -1,0 +1,113 @@
+.container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 40px;
+
+     h2 {
+          font-size: 40px;
+          line-height: 48px;
+          font-weight: 800;
+     }
+}
+
+.review {
+     display: flex;
+     align-items: start;
+     justify-content: space-between;
+     gap: 50px;
+}
+
+.reviewLeft {
+     width: 37%;
+
+     p {
+          color: #000;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          margin-bottom: 60px;
+
+     }
+
+     a {
+          padding: 30px;
+          border: 1px solid #F1F1F1;
+          background: #FFF;
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+          color: #000;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          cursor: pointer;
+          max-width: 414.4px;
+
+          &::before {
+               content: url('/images/ya-icon.png');
+               line-height: 0;
+          }
+
+          &::after {
+               content: url('/images/rew-arrow.png');
+               line-height: 0;
+          }
+     }
+}
+
+.reviewRight {
+     max-width: 100%;
+}
+
+@media (min-width: 0px) {
+     .review {
+          flex-direction: column;
+          gap: 30px;
+     }
+
+     .reviewLeft {
+          width: 100%;
+
+          p {
+               margin-bottom: 20px;
+          }
+
+     }
+
+}
+
+@media (min-width: 768px) {
+     .review {
+          gap: 50px;
+     }
+
+     .reviewLeft {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          gap: 30px;
+
+          p {
+               width: 50%;
+               margin-bottom: 60px;
+          }
+     }
+}
+
+@media (min-width: 1024px) {
+     .review {
+          flex-direction: row;
+     }
+
+     .reviewLeft {
+          width: 37%;
+          display: block;
+          gap: 0;
+
+          p {
+               width: 100%;
+          }
+     }
+}
