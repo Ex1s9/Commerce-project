@@ -1,8 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
-import { RootState } from "../../../../store/store";
 import { setTargetSection } from "../../../../store/viewSlice";
 import s from "./MenuLinks.module.scss";
 
@@ -15,7 +14,6 @@ const MenuLinks: React.FC<MenuLinksProps> = ({ links, className }) => {
      const location = useLocation();
      const navigate = useNavigate();
      const dispatch = useDispatch();
-     const targetSection = useSelector((state: RootState) => state.view.targetSection);
 
      const handleNavigation = (to: string, _offset = 0) => {
           if (location.pathname === "/portfolio") {
