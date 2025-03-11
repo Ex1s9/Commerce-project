@@ -27,8 +27,8 @@ const Price = () => {
    const totalRows = 6;
    const totalColumns = 3;
 
-   const reorderedServices: { title: string }[] = new Array(services.length);
-   const reorderedPrices: string[] = new Array(prices[selectedCategory]?.length || 0);
+   const reorderedServices: Array<{ title: string } | undefined> = Array.from({ length: services.length });
+   const reorderedPrices: string[] = Array.from({ length: prices[selectedCategory]?.length || 0 });
 
    services.forEach((service, index) => {
       const row = index % totalRows;

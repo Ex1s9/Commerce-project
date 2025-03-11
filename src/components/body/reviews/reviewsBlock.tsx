@@ -1,5 +1,5 @@
 import { FaStar } from 'react-icons/fa6';
-import s from './ReviewsBlock.module.scss';
+import s from './reviewsBlock.module.scss';
 
 type ReviewsCardProps = {
      title: string;
