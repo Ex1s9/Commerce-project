@@ -1,24 +1,43 @@
-import { Link } from 'react-scroll';
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import { useDispatch, useSelector } from "react-redux";
+import { useLocation, useNavigate } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
+import { RootState } from "../../../../store/store";
+import { setTargetSection } from "../../../../store/viewSlice";
 import s from "./MenuLinks.module.scss";
 
-const MenuLinks = () => {
+// Определяем тип для `links`
+type MenuLinksProps = {
+     links: { to: string; label: string; offset?: number }[];
+     className?: string;
+};
+
+const MenuLinks: React.FC<MenuLinksProps> = ({ links, className }) => {
+     const location = useLocation();
+     const navigate = useNavigate();
+     const dispatch = useDispatch();
+     const targetSection = useSelector((state: RootState) => state.view.targetSection);
+
+     const handleNavigation = (to: string, _offset = 0) => {
+          if (location.pathname === "/portfolio") {
+               dispatch(setTargetSection(to));
+               navigate("/", { replace: true });
+          }
+     };
+
      return (
-          <div className={s.links}>
-               <Link to="about" smooth={true} duration={850}>
-                    О нас
-               </Link>
-               <Link to="services" smooth={true} duration={850} offset={-150}>
-                    Услуги
-               </Link>
-               <Link to="galery" smooth={true} duration={850} offset={-15}>
-                    Галерея
-               </Link>
-               <Link to="reviews" smooth={true} duration={850} offset={-150}>
-                    Отзывы
-               </Link>
-               <Link to="contact" smooth={true} duration={850} offset={-200}>
-                    Контакты
-               </Link>
+          <div className={`${s.links} ${className}`}>
+               {links.map(({ to, label, offset = 0 }) =>
+                    location.pathname === "/portfolio" ? (
+                         <span key={to} onClick={() => handleNavigation(to, offset)}>
+                              {label}
+                         </span>
+                    ) : (
+                         <ScrollLink key={to} to={to} smooth={true} duration={850} offset={offset}>
+                              {label}
+                         </ScrollLink>
+                    )
+               )}
           </div>
      );
 };

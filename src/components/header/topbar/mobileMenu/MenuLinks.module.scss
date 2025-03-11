@@ -1,6 +1,7 @@
 .links {
      display: flex;
      gap: 2rem;
+
      & a:hover {
           color: gray;
           cursor: pointer;
@@ -24,5 +25,10 @@
 @media (min-width: 1024px) {
      .links {
           gap: 3rem;
+
+          span:hover {
+               cursor: pointer;
+               color: gray;
+          }
      }
 }

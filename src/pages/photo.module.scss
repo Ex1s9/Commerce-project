@@ -1,0 +1,48 @@
+.photoBlock {
+     padding: 20px;
+     margin-bottom: 100px;
+}
+
+.galleryGrid {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 40px;
+     filter: grayscale(100%) brightness(40%);
+     -webkit-filter: grayscale(100%) brightness(100%);
+     overflow: hidden;
+}
+
+.imageWrapper {
+     overflow: hidden;
+}
+
+.image {
+     width: 100%;
+     display: block;
+     object-fit: cover;
+}
+
+@media (min-width: 0px) {
+     .galleryGrid {
+          grid-template-columns: repeat(1, 1fr);
+          gap: 30px;
+     }
+
+}
+
+@media (min-width: 768px) {
+     .galleryGrid {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 25px;
+     }
+}
+
+@media (min-width: 1024px) {
+     .galleryGrid {
+          grid-template-columns: repeat(3, 1fr);
+     }
+
+     .centerOnLarge {
+          grid-column: 2 / 3;
+     }
+}

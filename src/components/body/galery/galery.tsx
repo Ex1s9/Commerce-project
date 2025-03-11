@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { Link } from "react-router";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "../../../../node_modules/swiper/modules/navigation.scss";
@@ -32,7 +33,7 @@ const Galery = () => {
           <main id="galery" className={s.galery}>
                <div className={s.title}>
                     <h2>Наши стрижки</h2>
-                    <a>Смотреть все работы</a>
+                    <Link to="/portfolio">Смотреть все работы</Link>
                </div>
 
                <div className={s.swiperWrapper}>
