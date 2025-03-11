@@ -6,7 +6,7 @@
       .buttonBlock {
          display: flex;
          gap: 20px;
-         color: #000;
+
 
          .button {
             border: 2px solid black;
@@ -16,6 +16,7 @@
             margin-bottom: 50px;
             font-size: 30px;
             font-weight: 800;
+            color: #000;
 
             &:hover {
                color: white;
