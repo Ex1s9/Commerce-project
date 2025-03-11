@@ -1,10 +1,13 @@
 .price {
    display: flex;
    flex-direction: column;
+
    .container {
       .buttonBlock {
          display: flex;
          gap: 20px;
+         color: #000;
+
          .button {
             border: 2px solid black;
             width: 33%;
@@ -13,26 +16,32 @@
             margin-bottom: 50px;
             font-size: 30px;
             font-weight: 800;
+
             &:hover {
                color: white;
                background-color: black;
             }
+
             &.active {
                background-color: black;
                color: white;
             }
          }
       }
+
       .priceList {
          display: grid;
          grid-template-columns: repeat(3, 1fr);
          gap: 65px;
+
          .column {
             width: 100%;
+
             & a {
                width: 250px;
                cursor: pointer;
             }
+
             .priceItem {
                display: flex;
                align-items: center;
@@ -44,16 +53,18 @@
                line-height: 21px;
                padding: 10px 20px;
                border-bottom: 1px solid #EBEBEB;
+
                .title {
                   font-size: 14px;
                   font-weight: 500;
                }
+
                .cost {
                   font-size: 18px;
                   font-weight: 800;
                }
             }
-            
+
             .serviceButton {
                display: inline-block;
                font-size: 14px;
@@ -69,6 +80,7 @@
                text-align: center;
                margin-top: 25px;
                padding-right: 65px;
+
                span {
                   margin-left: 15px;
                   padding: 10px 15px;
@@ -81,6 +93,7 @@
                   top: 0;
                   position: absolute;
                }
+
                &:hover {
                   color: #000;
                   background-color: #fff;
@@ -89,7 +102,7 @@
                }
             }
          }
-         
+
       }
    }
 }
@@ -97,15 +110,18 @@
 @media (min-width: 0px) {
    .price {
       padding: 0 20px;
+
       .container {
          .buttonBlock {
             flex-direction: column;
             margin-bottom: 50px;
+
             .button {
                width: 100%;
                margin-bottom: 0px;
             }
          }
+
          .priceList {
             grid-template-columns: repeat(1, 1fr);
          }
@@ -116,15 +132,17 @@
 @media (min-width: 768px) {
    .price {
       padding: 0 30px;
+
       .container {
          .buttonBlock {
             flex-direction: row;
          }
+
          .priceList {
             grid-template-columns: repeat(3, 1fr);
          }
       }
-      
+
    }
 }
 
@@ -132,5 +150,5 @@
    .price {
       padding: 0 40px;
    }
-   
+
 }

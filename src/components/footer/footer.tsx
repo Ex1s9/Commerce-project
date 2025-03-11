@@ -1,15 +1,9 @@
 import React from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { RiTelegram2Fill } from "react-icons/ri";
-import MenuLinks from "../header/topbar/mobileMenu/MenuLinks";
 import s from "./footer.module.scss";
 
 const Footer: React.FC = () => {
-    const footerLinks = [
-        { to: "about", label: "О нас" },
-        { to: "services", label: "Услуги", offset: -50 },
-        { to: "contact", label: "Контакты", offset: -200 },
-    ];
 
     const links = [
         "https://t.me/+79783460526",
@@ -43,9 +37,6 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
                 <div className={s.copyright}>Copyright 2025 ©</div>
-                <div className={s.buttonList}>
-                    <MenuLinks links={footerLinks} className={s.footerLinks} />
-                </div>
             </div>
         </footer>
     );
