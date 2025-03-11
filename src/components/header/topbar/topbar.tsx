@@ -15,7 +15,7 @@ const Topbar: React.FC = () => {
 	];
 
 	return (
-		<header className={s.header}>
+		<header className={s.header} id="about">
 			<div className={s.headerContent}>
 				<div className={s.logo}>
 					<div>

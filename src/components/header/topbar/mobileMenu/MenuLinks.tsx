@@ -6,7 +6,6 @@ import { RootState } from "../../../../store/store";
 import { setTargetSection } from "../../../../store/viewSlice";
 import s from "./MenuLinks.module.scss";
 
-// Определяем тип для `links`
 type MenuLinksProps = {
      links: { to: string; label: string; offset?: number }[];
      className?: string;
